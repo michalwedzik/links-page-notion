@@ -1,0 +1,7 @@
+{
+  "name": "links-page-notion",
+  "compatibility_date": "2026-09-28",
+  "assets": {
+    "directory": "./dist"
+  }
+}
