@@ -7,7 +7,10 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "sync:notion": "node scripts/notion-sync.mjs",
+    "build": "npm run sync:notion && astro build",
+    "build:static": "astro build",
+    "test": "node --test scripts/notion-sync.test.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
