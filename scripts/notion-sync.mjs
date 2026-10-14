@@ -1,9 +1,10 @@
 import { writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 
+// v2
 export async function fetchNotionLinks(env = process.env) {
   const token = env.NOTION_TOKEN;
-  // Preserve compatibility with the previous GitHub Actions configuration.
+  // Preserve compatibility with the previous GitHub Actions configuration. 
   const dataSourceId = env.NOTION_DATA_SOURCE_ID || env.NOTION_DATABASE_ID;
 
   if (!token || !dataSourceId) {
