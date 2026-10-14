@@ -40,6 +40,7 @@ export async function fetchNotionLinks(env = process.env) {
       throw new Error("Notion query is incomplete; narrow the data source before syncing.");
     }
 
+
     for (const page of data.results) {
       const properties = page.properties;
       const requiredTypes = {
